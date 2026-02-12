@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="styleSheet" href="default.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign In</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/originals/40/cc/60/40cc602b3186be5fedd686e4dfc34711.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        background-color:#fff8eb;
+        font-family:sans-serif;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+        }
+        .container {
+            width:356px;
+            height:440px;
+            background-color:#fff;
+            padding:30px;
+            border-radius:5px;
+            text-align:center;
+            box-shadow: 3px 5px 50px rgba(0, 0, 0, 0.1);
+            margin-top: 165px;
+            margin-bottom:-33px;
+
+        }
+        input[type="email"],
+        input[type="password"]{
+            font-size: 17px;
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        ::placeholder {
+            color: #777;
+            font-size: 17px;
+        }
+        .a{
+            background-color: #fa9c03;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            font-size:20px;
+            font-weight: bold;
+        }
+        .forgot-password{
+            text-decoration: none;
+            font-size:14px;
+            color:#fa9c03
+        }
+        .forgot-password:hover{
+            text-decoration: underline;
+        }
+        .line{
+            height:0px;
+            width: 100%;
+            border: 0.2px solid #e4e2e2;
+        }
+        .create-account{
+            background-color: #27d404;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 200px;
+            font-size:15px;
+            font-weight: bold;
+        }
+
+        .c{
+            width: 455px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 265px;
+        }
+        h1{
+            margin-top: 90px;
+            margin-bottom: -140px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fa9c03;
+            text-align: center;
+            font-size: 40px;
+        } 
+        h2{
+            font-size: 27px;
+            text-align: left;
+            font-weight: lighter;
+        }
+        button:hover{
+            opacity: 0.92;
+        }
+        .g{
+            color: #706f6f;
+            padding-top: 15px;
+        }  
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.a').click(function () {
+                alert('You Have Logged In Successfully !');
+            });
+            $('.forgot-password').click(function () {
+                    alert('Sorry We Cannot Recover Passwords Yet !');
+            });
+        });
+    </script>
+</head>
+<body><section>
+    <header class="navbar">
+        <div class="navbarInner">
+           <div class="logo">
+            <a href="Index.html"><img src="icon.png" width="75px" height="75px"></a>
+           </div>
+           <div class="inputContainer">
+            <ul class="navbarContent">              
+                <li class="colorChange"><a href="Index.html" >Home</a></li>
+                <li class="colorChange"><a href="Index.html#product">Shop</a></li>
+                <li class="colorChange"><a href="about.html">About</a></li>
+                <li class="colorChange"><a href="#contact">Contact</a></li>
+                <li class="colorChange"><a href="login.html">Sign In</a></li>
+            </ul>
+           </div>
+           <div class="icons">
+                <p class="glyphicon glyphicon-search"></p>
+                <p class="glyphicon glyphicon-shopping-cart"></p>    
+            </div>
+        </div>
+    </header>
+    <section><h1>Hello, Sign In</h1>
+        <div class="box">
+            
+        <div class="container">
+            
+            <form action="Index.html">
+                <input type="email" name="email" placeholder="Email address" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <button type="submit" class="a" accesskey="enter">Log in</button><br><br>
+                <a href="#" class="forgot-password">Forgotten password?</a>
+              </form><br>
+            <div class="line"></div><br>
+            <a href="register.html"><button type="button" class="create-account">Create new account</button></a>
+            </form>
+            <p class="g">Log in to explore exclusive access to our latest furniture collections and updates.</p>
+        </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="upperFooter" id="contact">
+            <div class="leftFooter">
+                <p>Get Connected With Us On Social Networks:</p>
+            </div>
+            <div class="rightFooter">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="middleFooter">
+            <div class="companyName">
+                <p class="companyNameFooter">FURNITURE</p>
+                <p class="companyNameFooterDesc">Discover our latest furniture collection,<br>featuring stylish designs and versatile <br>options to elevate your space.<br>Browse the range for elegance.</p>
+            </div>
+            <div class="companyProducts">
+                <p class="companyProductsFooter">PRODUCTS</p>
+                <ul class="footerProductsMain">
+                    <li class="footerProducts"><a href="#">Dining Table</a></li>
+                    <li class="footerProducts"><a href="#">Chair</a></li>
+                    <li class="footerProducts"><a href="#">Sofa</a></li>
+                    <li class="footerProducts"><a href="#">Bed</a></li>
+                </ul>
+            </div>
+            <div class="usefulLinks">
+                <p class="companyLinksFooter">USEFUL LINKS</p>
+                <ul class="usefulLinksMain">
+                    <li class="footerlinks"><a href="#">Your Account</a></li>
+                    <li class="footerlinks"><a href="#">Become An Affiliate</a></li>
+                    <li class="footerlinks"><a href="#">Shipping Rates</a></li>
+                    <li class="footerlinks"><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="companyContact">
+                <p class="companyContactFooter">CONTACT</p>
+                <ul class="companyContactMain">
+                    <li class="footerContact"><a href="#">ITER SOA, Bhubaneswar</a></li>
+                    <li class="footerContact"><a href="#">info@furniture.com</a></li>
+                    <li class="footerContact"><a href="#">+01 234 567 88</a></li>
+                    <li class="footerContact"><a href="#">+01 234 567 89</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="lowerFooter">
+            <p>&copy;2019 Copyright: furniture.com</p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

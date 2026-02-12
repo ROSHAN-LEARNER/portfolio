@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Roshan Kumar Sahoo - Software Developer Aspirant">
+    <title>Roshan | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="./style/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assests/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assests/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assests/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assests/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assests/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assests/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assests/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assests/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assests/icons//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assests/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assests/icons/favicon-16x16.png">
+    <link rel="manifest" href="assests/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assests/icons//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        html { scroll-behavior: smooth !important; }
+        .col-centered { position: relative; margin-left: auto; margin-right: auto; }
+        .underline--magical {
+            background-image: linear-gradient(120deg, #f79322 0%, #f79322 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.25em;
+            background-position: 0 89%;
+            transition: background-size 0.2s ease-in;
+            padding: 0 7px 0 3px;
+        }
+        .underline--magical:hover { background-size: 100% 89%; }
+        .move-up-slightly { position: relative; top: 0; transition: all 0.3s ease-out; }
+        .move-up-slightly:hover { top: -6px; }
+
+        .roadmap-container { position: relative; }
+        
+        .roadmap-container::before {
+            content: '';
+            position: absolute;
+            left: 31px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to top, #f79322 0%, #f79322 80%, #e2e8f0 60%, #e2e8f0 100%);
+            z-index: 0;
+        }
+
+        .edu-item { position: relative; z-index: 1; }
+
+        .edu-icon-box {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 4px solid #f79322;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1.2rem;
+            color: #111827;
+        }
+
+        .edu-icon-box.ongoing {
+            border-color: #e2e8f0;
+            position: relative;
+        }
+        body, nav, section, footer, a, button, i, div {
+            transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+        }
+
+        .dark-mode {
+            background-color: #121212 !important;
+            color: #ffffff !important;
+        }
+
+        .dark-mode nav {
+            background-color: #1e1b18 !important;
+            border-bottom: 1px solid #333;
+        }
+
+        .dark-mode nav a, 
+        .dark-mode .logo-box,
+        .dark-mode .text-gray-900,
+        .dark-mode .text-gray-700 {
+            color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        .dark-mode footer#end, 
+        .dark-mode section#skills {
+            background-color: #000000 !important;
+        }
+
+        .dark-mode footer p, 
+        .dark-mode footer span {
+            color: #e2e8f0 !important;
+        }
+
+        .dark-mode #theme-toggle {
+            border-color: #f79322 !important;
+        }
+
+        .dark-mode #theme-icon {
+            color: #f79322 !important;
+        }
+
+        .dark-mode #theme-toggle:hover {
+            background-color: #f79322 !important;
+        }
+
+        .dark-mode #theme-toggle:hover #theme-icon {
+            color: #121212 !important;
+        }
+
+        .dark-mode .underline--magical {
+            color: #ffffff !important;
+        }
+        .dark-mode #education {
+            background-color: #121212 !important;
+        }
+
+        .dark-mode .bg-gray-50 {
+            background-color: #1e1e1e !important;
+            border-color: #334155 !important;
+        }
+
+        .dark-mode .edu-icon-box {
+            background-color: #1e1b18 !important;
+            color: #f79322 !important;
+        }
+
+        .dark-mode .edu-icon-box.ongoing {
+            border-color: #475569 !important;
+        }
+
+        .dark-mode .text-gray-800, 
+        .dark-mode .text-gray-500 {
+            color: #cbd5e1 !important;
+        }
+
+        .dark-mode .roadmap-container::before {
+            background: linear-gradient(to top, #f79322 0%, #f79322 80%, #334155 60%, #334155 100%) !important;
+        }
+
+
+        .dark-mode #projects {
+            background-color: #1a1a1a !important;
+        }
+
+        .dark-mode #projects .bg-white {
+            background-color: #262626 !important;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .dark-mode #projects h3 {
+            color: #ffffff !important;
+        }
+
+        .dark-mode #projects p.text-gray-500 {
+            color: #f79322 !important;
+        }
+
+        .dark-mode #projects ul li {
+            color: #94a3b8 !important;
+        }
+
+        .dark-mode #projects .bg-gray-100 {
+            background-color: #334155 !important;
+            color: #f8fafc !important;
+        }
+
+        .dark-mode #projects a:hover {
+            transform: translateY(-10px);
+        }
+
+        .edu-item .edu-icon-box.ongoing {
+            border-color: #94a3b8 !important;
+        }
+
+        .edu-item .ongoing + div {
+            border-color: #94a3b8 !important;
+        }
+
+        .edu-item .edu-icon-box:not(.ongoing) {
+            border-color: #f79322 !important;
+        }
+
+        .edu-item .edu-icon-box:not(.ongoing) + div {
+            border-color: #f79322 !important;
+        }
+
+        .dark-mode .edu-item .ongoing + div {
+            border-color: #475569 !important; 
+        }
+
+        .dark-mode .edu-item .edu-icon-box.ongoing {
+            background-color: #1e1e1e !important;
+        }
+
+        .dark-mode .edu-item .edu-icon-box:not(.ongoing) {
+            background-color: #1e1e1e !important;
+            color: #f79322 !important;
+        }
+        .dark-mode p.text-gray-700 {
+            color: #cbd5e1 !important;
+        }
+
+        .dark-mode .hero-contact-btn {
+            border-color: #ffffff !important;
+            color: #ffffff !important;
+            background-color: transparent;
+        }
+
+        .dark-mode .hero-contact-btn:hover {
+            background-color: #ffffff !important;
+            color: #121212 !important;
+        }
+
+        #meow-box {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .dark-mode #meow-box {
+            background-color: #ffffff !important;
+            color: #1a1a1a !important;
+            border-color: #f79322 !important;
+        }
+
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 4px solid #f79322;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        .text-theme-color { color: #f79322; }
+        .border-theme-color { border-color: #f79322; }
+        .hover-border-theme:hover { border-color: #f79322; }
+    </style>
+</head>
+<body id="top" style="background-color: #fffbf0;" class="text-gray-900">
+    <nav class="sticky top-0 z-50 bg-white shadow-md p-4">
+    <div class="w-11/12 lg:w-9/12 col-centered flex justify-between items-center">
+        
+        <div class="flex-none">
+            <a href="index.html" class="border-4 border-gray-900 p-2 text-2xl font-extrabold">
+                RS
+            </a>
+        </div>
+
+        <div class="hidden md:flex space-x-8 text-xl font-extrabold">
+            <a href="#skill" class="underline--magical">Skills</a>
+            <a href="#edu" class="underline--magical">Education</a>
+            <a href="#projects" class="underline--magical">Projects</a>
+            <a href="assests/Roshan Kumar Sahoo Resume.pdf" target="_blank" class="underline--magical">Resume</a>
+            <a href="#end" class="underline--magical">Contact</a>
+        </div>
+
+        <div class="flex-none">
+            <button id="theme-toggle"
+                class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gray-900 transition-all duration-300 hover:bg-gray-900 group focus:outline-none">
+                <i id="theme-icon"
+                    class="fa-solid fa-moon text-lg md:text-xl text-gray-900 group-hover:text-white transition-colors">
+                </i>
+            </button>
+        </div>
+
+    </div>
+</nav>
+    <div class="py-20 xl:py-12">
+        <div class="w-11/12 lg:w-9/12 col-centered text-center">
+            <h1 class="animate__animated animate__fadeInDown text-5xl lg:text-7xl font-extrabold mb-6">
+                Hi, I'm <span style="color: #fc8600;">Roshan Kumar Sahoo</span>.
+            </h1>
+             <div id="meow-box" class="fixed hidden pointer-events-none z-50 animate__animated animate__bounceIn" 
+     style="background-color: #f79322; color: #fff; border-radius: 12px; font-weight: 900; border: 3px solid #1a1a1a; padding: 8px 16px;">
+    MEOW! 🐾
+</div>
+<div class="w-full text-center">
+    <img id="cat-image" 
+         onclick="iterateClickCount(event)" 
+         src="/assests/gitgit.gif" 
+         alt="Cat Mascot" 
+         style="border-radius: 50% !important;"
+         class="cursor-pointer xl:mt-10 inline-block animate__animated animate__fadeIn border-gray-900 duration-300 shadow-md border-8 h-80 w-80 md:w-96 md:h-96">
+</div><div style="height:15px;"></div>
+            <p class="animate__animated animate__fadeInUp text-2xl lg:text-3xl font-bold text-gray-700 max-w-4xl col-centered" style="top: 22px;">
+                Software Developer Aspirant based in Bhubaneswar. 
+                I am focused on refining my technical foundation and transforming ideas into functional digital experiences.
+            </p><div style="height:10px;"></div>
+            <div class="mt-10 animate__animated animate__fadeIn animate__delay-1s">
+    <a href="mailto:rksahoo2k16@gmail.com" 
+       class="hero-contact-btn inline-block border-4 border-gray-900 px-8 py-3 text-2xl font-extrabold hover:bg-gray-900 hover:text-white transition">
+        Contact Me
+    </a>
+            </div>
+        </div><section id="skill"></section>
+    </div>
+
+    <section id="skills" class="py-20 text-white" style="background-color: #1e1b18;">
+        <div class="w-11/12 lg:w-9/12 col-centered">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 border-l-4 bg-gray-800 move-up-slightly" style="border-color: #f79322;">
+                    <h3 class="text-xl font-extrabold mb-2 uppercase" style="color: #f79322;">Programming</h3>
+                    <p class="text-2xl font-bold">Python, Java, C </p>
+                </div>
+                <div class="p-6 border-l-4 bg-gray-800 move-up-slightly" style="border-color: #f79322;">
+                    <h3 class="text-xl font-extrabold mb-2 uppercase" style="color: #f79322;">Web Tech</h3>
+                    <p class="text-2xl font-bold">HTML, CSS, Bootstrap, React.js, JavaScript </p>
+                </div>
+                <div class="p-6 border-l-4 bg-gray-800 move-up-slightly" style="border-color: #f79322;">
+                    <h3 class="text-xl font-extrabold mb-2 uppercase" style="color: #f79322;">Database</h3>
+                    <p class="text-2xl font-bold">MySQL </p>
+                </div>
+                <div class="p-6 border-l-4 bg-gray-800 move-up-slightly" style="border-color: #f79322;">
+                    <h3 class="text-xl font-extrabold mb-2 uppercase" style="color: #f79322;">Core Concepts</h3>
+                    <p class="text-2xl font-bold">DSA, OOP </p>
+                </div>
+            </div>
+        </div><section id="edu"></section>
+    </section>
+
+    <section id="education" class="py-20 bg-white" >
+        <div class="w-11/12 lg:w-9/12 col-centered">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-16">Education</h2>
+            
+            <div class="roadmap-container space-y-16">
+                
+                <div class="edu-item flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInUp">
+                    <div class="edu-icon-box ongoing flex-shrink-0">
+                        <div class="pulse-ring"></div>
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border-l-8 border-gray-300 w-full">
+                        <h3 class="text-2xl font-extrabold">Siksha 'O' Anusandhan (ITER), Bhubaneswar</h3>
+                        <p class="text-xl font-bold text-gray-800">B.Tech (CSE)</p>
+                        <p class="text-lg text-gray-500 font-bold">2027* </p>
+                        <p class="text-xl mt-2 font-extrabold" style="color: #f79322;">CGPA: 8.54 </p>
+                    </div>
+                </div>
+
+                <div class="edu-item flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="edu-icon-box flex-shrink-0" style="border-color: #f79322;">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border-l-8 w-full" style="border-color: #f79322;">
+                        <h3 class="text-2xl font-extrabold">DAV Public School, Unit-8, Bhubaneswar</h3>
+                        <p class="text-xl font-bold text-gray-800">12th (CBSE)</p>
+                        <p class="text-lg text-gray-500 font-bold">2023 </p>
+                        <p class="text-xl mt-2 font-extrabold" style="color: #f79322;">Percentage: 74.8% </p>
+                    </div>
+                </div>
+
+                <div class="edu-item flex flex-col md:flex-row gap-8 items-start animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="edu-icon-box flex-shrink-0" style="border-color: #f79322;">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border-l-8 w-full" style="border-color: #f79322;">
+                        <h3 class="text-2xl font-extrabold">DAV Public School, Unit-8, Bhubaneswar</h3>
+                        <p class="text-xl font-bold text-gray-800">10th (CBSE)</p>
+                        <p class="text-lg text-gray-500 font-bold">2021 </p>
+                        <p class="text-xl mt-2 font-extrabold" style="color: #f79322;">Percentage: 91% </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20" style="background-color: #fffbf0;">
+    <div class="w-11/12 lg:w-9/12 col-centered">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-12">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <a href="assests/Projects/ecommerce/Index.html" target="_blank" class="block animate__animated animate__fadeInUp bg-white p-8 shadow-lg rounded-xl border-t-8 move-up-slightly transition-all hover:shadow-2xl" style="border-color: #f79322;">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-3xl font-extrabold text-gray-900">E-Shopping Website UI</h3>
+                    <span class="text-lg font-bold px-3 py-1 rounded-full bg-gray-100 text-gray-500">2025</span>
+                </div>
+                <p class="text-xl font-bold text-gray-500 mb-4">HTML, Bootstrap, CSS</p>
+                <ul class="list-disc ml-5 text-lg font-bold text-gray-700">
+                    <li>Designed a responsive e-commerce homepage layout with product sections.</li>
+                    <li>Styled navigation bar, product cards, and buttons using custom CSS.</li>
+                </ul>
+            </a>
+
+            <a href="#top" class="block animate__animated animate__fadeInUp bg-white p-8 shadow-lg rounded-xl border-t-8 move-up-slightly transition-all hover:shadow-2xl" style="border-color: #f79322; animation-delay: 0.3s;">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-3xl font-extrabold text-gray-900">Portfolio Website</h3>
+                    <span class="text-lg font-bold px-3 py-1 rounded-full bg-gray-100 text-gray-500">2024</span>
+                </div>
+                <p class="text-xl font-bold text-gray-500 mb-4">HTML, Tailwind CSS, JS</p>
+                <ul class="list-disc ml-5 text-lg font-bold text-gray-700">
+                    <li>Engineered responsive design for multiple devices.</li>
+                    <li>Enhanced UI with custom CSS and navigation.</li>
+                </ul>
+            </a>
+
+            <a href="assests/Projects/Iterbook/login.html" target="_blank" class="block animate__animated animate__fadeInUp bg-white p-8 shadow-lg rounded-xl border-t-8 move-up-slightly transition-all hover:shadow-2xl" style="border-color: #f79322; animation-delay: 0.6s;">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-3xl font-extrabold text-gray-900">Login Page UI</h3>
+                    <span class="text-lg font-bold px-3 py-1 rounded-full bg-gray-100 text-gray-500">2024</span>
+                </div>
+                <p class="text-xl font-bold text-gray-500 mb-4">HTML, CSS, JavaScript</p>
+                <ul class="list-disc ml-5 text-lg font-bold text-gray-700">
+                     <li>Designed a responsive login interface inspired by modern social media platforms.</li>
+                    <li>Styled the layout using custom CSS for clean form alignment and button effects.</li>
+                </ul>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer id="end" class="py-6 text-center" style="background-color: #1e1b18;">
+    <div class="w-11/12 lg:w-9/12 col-centered">
+        
+        <h2 class="text-[10px] uppercase tracking-[0.2em] font-bold mb-2" style="color: #475569;">Contact Me</h2>
+        
+        <p class="text-xl font-extrabold text-white mb-4">Roshan Kumar Sahoo</p>
+        
+        <div class="flex flex-row justify-center items-center gap-3 md:gap-6 text-[13px]">
+            
+    <a href="tel:+919337877380" class="flex items-center gap-1.5 transition-all hover:brightness-125">
+        <i class="fa-solid fa-phone" style="color: #f79322;"></i>
+        <span style="color: #94a3b8;">+91 9337877380</span>
+    </a>
+
+    <span style="color: #334155;">|</span>
+
+    <a href="https://wa.me/919337877380" target="_blank" class="flex items-center gap-1.5 transition-all hover:brightness-125">
+        <i class="fa-brands fa-whatsapp" style="color: #f79322;"></i>
+        <span style="color: #94a3b8;">Whatsapp</span>
+    </a>
+
+    <span style="color: #334155;">|</span>
+
+    <a href="mailto:rksahoo2k16@gmail.com" class="flex items-center gap-1.5 transition-all hover:brightness-125">
+        <i class="fa-solid fa-envelope" style="color: #f79322;"></i>
+        <span style="color: #94a3b8;">rksahoo2k16@gmail.com</span>
+    </a>
+    
+</div>
+
+        <div class="mt-6 pt-4 border-t border-gray-800/20">
+            <p class="text-[9px] uppercase tracking-widest" style="color: #475569;">© 2024 Roshan Kumar Sahoo</p>
+        </div>
+    </div>
+</footer>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    function iterateClickCount(event) {
+    const meowBox = document.getElementById('meow-box');
+    const catImg = document.getElementById('cat-image');
+
+    meowBox.style.left = (event.pageX - 40) + 'px';
+    meowBox.style.top = (event.pageY - 60) + 'px';
+
+    meowBox.classList.remove('hidden');
+
+    catImg.classList.add('animate__headShake');
+
+    setTimeout(() => {
+        meowBox.classList.add('hidden');
+        catImg.classList.remove('animate__headShake');
+    }, 1000);
+    }
+</script>
+
+</body>
+</html>

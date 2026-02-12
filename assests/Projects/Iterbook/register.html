@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for Iterbook</title>
+    <link rel="icon" href=icon.png type="image/x-icon"> 
+    <style>
+    body{
+        background-color:#fff8eb;
+        font-family:sans-serif;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+    }
+    .container {
+        width:370px;
+        height:530px;
+        background-color:#fff;
+        padding:20px;
+        border-radius:5px;
+        box-shadow: 3px 5px 50px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+        color: #fa9c03;
+        text-align: center;
+        font-size: 60px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size:17px;
+        color:#fa9c03 
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .line{
+            margin-left: -21px;
+            height:0px;
+            width: 111%;
+            border: 0.2px solid #e4e2e2;
+            margin-bottom: 20px;
+            margin-top: 10pz;
+    }
+    h3{
+        text-align: center;
+        font-size:25px;
+        margin: -2%;
+    }
+    .quick{
+        text-align: center;
+        font-size:15px;
+        color: #686666;
+    }
+    .sname{
+        width: px;
+        display:flex;
+        justify-content: space-between;
+    }
+    input{
+            width: 100%;
+            height:20px;
+            font-size: 15px;
+            padding: 16px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin:0px 2px;
+    }
+    ::placeholder {
+            color: #777;
+            font-size: 17px;
+    }
+    p{
+        text-align: left;
+        font-size: 13px;
+    }
+    .dd {
+        font-size: 15px;
+        padding: 8px;
+        margin: -5px 2px;
+        width: 30vw;
+    }
+    .ok{
+        justify-content: space-between;
+        display: flex;
+    }
+    select{
+        border-color: #ccc;
+    }
+    .gender-options {
+        display:flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .gen{
+        border-radius:2px;
+        outline: 0.9px solid #ccc;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5px;
+        gap:40px
+    }
+    .nova{
+        margin-left:-3px;
+        margin-top: 20px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .toy{
+        font-size:10px;
+        margin-top: -1px;
+        margin-bottom: 18px;
+    }
+    .a{
+        background-color: #27d404;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 200px;
+        font-size:20px;
+        font-weight: bold;
+    }
+    button:hover{
+        opacity: 0.92;
+    }
+    .yay{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        line-height: 19px;
+    }  
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>iterbook</h1>
+        <div class="container">
+                <h3>Create a new account</h3>
+                <p class="quick">Its quick and easy.</p>
+            <div class="line"></div>
+            <form action="registered.html">
+                <div class="sname">
+                <input type="text" placeholder="First name" name="first" size="15" required>
+                <input type="text" placeholder="Surname" name="surname" size="15" required>
+            </div>
+                <p>Date of birth</p>
+                <div class="ok">
+                <select class="dd" name="dd" required>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+                <select class="dd" name="mm">
+							<option>Jan</option>
+							<option>Feb</option>
+							<option>Mar</option>
+							<option>Apr</option>
+							<option>May</option>
+							<option>Jun</option>
+							<option>Jul</option>
+							<option>Aug</option>
+							<option>Sep</option>
+							<option>Nov</option>
+							<option>Dec</option>
+				</select>
+                <select class="dd" name="yy">
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>   
+                            <option>2019</option>
+							<option>2018</option>
+							<option>2017</option>
+							<option>2016</option>
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+							<option>2009</option>
+							<option>2008</option>
+							<option>2007</option>
+							<option>2006</option>
+							<option>2005</option>
+							<option>2004</option>
+							<option>2003</option>
+							<option>2002</option>
+							<option>2001</option>
+							<option>2000</option>
+				</select></div>
+                <p>Gender</p>
+                <div class="gender-options">
+                    <div class="gen"><input type="radio"name="gender" required><label for="female">Female</label></div>
+                    <div class="gen"><input type="radio" name="gender"><label for="male">Male</label></div>
+                    <div class="gen"><input type="radio" name="gender"><label for="other">Other</label></div>
+                </div>
+                <div class="nova">
+                <input type="email" placeholder="Email address" name="email" required><br>
+                <input type="password" placeholder="New Password" name="surname" required><br>
+                </div>
+                <p class="toy">People who use our service may have uploaded your contact information to ITER.</p>
+                <p class="toy">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                <div class="yay"><button type="submit" class="a">Sign up</button><br>
+                <a href="login.html">Already have an account?</a></div> 
+            </form>
+        </div><br> 
+          
+    </div>  
+</body>
+</html>
